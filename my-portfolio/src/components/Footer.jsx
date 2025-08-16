@@ -5,7 +5,7 @@ const Footer = () => {
         <footer className="footer-section">
             <div className="container">
                 <p>&copy; 2025 Gino James. All rights reserved.</p>
-                <p>Designed with <span className="text-custom-red">&hearts;</span> by an experienced web developer.</p>
+                <p>Designed with <span className="text-custom-red">&hearts;</span> by Gino James</p>
             </div>
         </footer>
     );
