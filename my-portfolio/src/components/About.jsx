@@ -10,7 +10,7 @@ const About = () => {
                 <div className="about-content md-flex-row">
                     <div className="about-image-wrapper md-w-1-3 md-mb-0">
                         {/* Remember to replace this with your actual photo */}
-                        <img src="https://drive.google.com/file/d/1-WYGARI9LAU-jhV6YUEPof1LIdRYFii2/view?usp=sharing" alt="Gino James" className="about-image" />
+                        <img src="my-portfolio/src/assets/pp.jpg" alt="Gino James" className="about-image" />
                     </div>
                     <div className="about-text-content md-w-2-3">
                         <p>
