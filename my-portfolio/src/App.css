@@ -1,63 +1,61 @@
-/* src/App.css */
 
-/* Define CSS Variables for consistent colors */
 :root {
-    --custom-red: #FF0000; /* Your primary accent color */
+    --custom-red: #FF0000; 
     --black: #000000;
-    --gray-900: #111827; /* Darkest gray, background for some sections */
-    --gray-800: #1F2937; /* Slightly lighter gray, for cards/containers */
-    --gray-700: #374151; /* Border color, form backgrounds */
-    --gray-300: #D1D5DB; /* Light gray for secondary text */
+    --gray-900: #111827; 
+    --gray-800: #1F2937; 
+    --gray-700: #374151; 
+    --gray-300: #D1D5DB; 
     --white: #FFFFFF;
-    --green-600: #22C55E; /* For success messages */
-    --red-600: #DC2626; /* For error messages */
+    --green-600: #22C55E; 
+    --red-600: #DC2626; 
 }
 
-/* Base styles for the body and HTML */
-html, body { /* Apply styles to both html and body */
-    font-family: 'Inter', sans-serif; /* Apply Inter font globally */
-    background-color: var(--black); /* Set a dark background */
-    color: var(--white); /* Default text color */
-    margin: 0; /* Remove default body margin */
-    padding: 0; /* Ensure no default padding */
-    width: 100%; /* Ensure they take full width */
-    overflow-x: hidden; /* Prevent horizontal scrolling */
-    -webkit-font-smoothing: antialiased; /* Improve font rendering on macOS */
-    -moz-osx-font-smoothing: grayscale; /* Improve font rendering on Firefox */
+
+html, body { 
+    font-family: 'Inter', sans-serif;
+    background-color: var(--black); 
+    color: var(--white);
+    margin: 0; 
+    padding: 0; 
+    width: 100%; 
+    overflow-x: hidden; 
+    -webkit-font-smoothing: antialiased; 
+    -moz-osx-font-smoothing: grayscale; 
 }
 
-/* Smooth scrolling for anchor links */
+
 html {
     scroll-behavior: smooth;
 }
 
-/* Universal box-sizing for consistent layout calculations */
+
 *, *::before, *::after {
     box-sizing: border-box;
 }
 
-/* Overall app container styling */
+
 .app-container {
     font-family: 'Inter', sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     background-color: var(--black);
     color: var(--white);
-    /* Ensure min-height is set to cover the viewport even with sparse content */
+    
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    width: 100%; /* Ensure app container also takes full width */
-    flex-shrink: 0; /* Prevent the container from shrinking */
+    width: 100%; 
+    flex-shrink: 0; 
 }
 
-/* Ensure main content area expands to fill available space */
+
 .app-container > *:not(.navbar):not(.footer-section) {
     flex-grow: 1;
 }
 
 
-/* General Utility Classes Mapping (mimicking Tailwind where custom CSS is used) */
+
 .text-custom-red { color: var(--custom-red); }
 .bg-custom-red { background-color: var(--custom-red); }
 .border-custom-red { border-color: var(--custom-red); }
@@ -97,7 +95,7 @@ html {
 .transform { transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y)); }
 .hover-scale-105:hover { transform: scale(1.05); }
 
-/* Standard container for content width */
+
 .container {
     width: 100%; /* Ensure container fills parent width */
     margin-left: auto;
@@ -202,7 +200,7 @@ html {
     border-bottom-right-radius: 0.5rem; /* rounded-b-lg */
 }
 .navbar-container {
-    max-width: 1280px; /* Max width for content within navbar */
+    max-width: 1280px;
     margin-left: auto;
     margin-right: auto;
     padding-left: 1.5rem;
@@ -217,11 +215,11 @@ html {
     color: var(--custom-red); /* Logo color */
     border-radius: 0.375rem; /* rounded-md */
     padding: 0.5rem; /* p-2 */
-    transition: all 0.3s ease-in-out; /* Smooth transition for hover effects */
-    text-decoration: none; /* Remove underline */
+    transition: all 0.3s ease-in-out; 
+    text-decoration: none;
 }
 .navbar-logo:hover {
-    transform: scale(1.05); /* Slightly enlarge on hover */
+    transform: scale(1.05);
 }
 .navbar-links {
     display: flex;
@@ -256,7 +254,7 @@ html {
 .hero-gradient-overlay {
     position: absolute;
     inset: 0; /* Cover the entire section */
-    background: linear-gradient(to bottom right, var(--black), #1F0000, #4B0000); /* Dark gradient background */
+    background: linear-gradient(to bottom right, var(--black), #1F0000, #4B0000); 
     opacity: 0.75; /* Semi-transparent overlay */
 }
 .hero-content {
@@ -267,7 +265,7 @@ html {
     margin-left: auto;
     margin-right: auto;
     border-radius: 0.5rem; /* rounded-lg */
-    width: 100%; /* Ensure content within hero also takes full available width */
+    width: 100%;
 }
 .hero-headline {
     font-size: 3rem; /* text-5xl */
