@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-//import { useInView } from '../hooks/useInView.js'; // Corrected import path
+
 
 const Hero = () => {
     const [headlineVisible, setHeadlineVisible] = useState(false);
@@ -12,7 +12,7 @@ const Hero = () => {
         // "Hello, I'm" fades in
         const timer1 = setTimeout(() => setHeadlineVisible(true), 200);
 
-        // "Gino" fades in after a delay
+        
         const timerGino = setTimeout(() => setGinoVisible(true), 1000);
 
         // "James" fades in after "Gino"
