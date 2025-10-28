@@ -1,6 +1,6 @@
 import React from 'react';
 import { useInView } from '../hooks/useInView';
-import profilePic from '../assets/pp.jpg'; // ✅ Import local image
+import profilePic from '../assets/pp.jpg'; // 
 
 const About = () => {
     const [ref, isVisible] = useInView({ threshold: 0.1 });
@@ -15,7 +15,7 @@ const About = () => {
                 <h2 className="about-title">About Me</h2>
                 <div className="about-content md-flex-row">
                     <div className="about-image-wrapper md-w-1-3 md-mb-0">
-                        {/* ✅ Use local image here */}
+                       
                         <img
                             src={profilePic}
                             alt="Gino James"
