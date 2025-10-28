@@ -1,16 +1,26 @@
 import React from 'react';
-import { useInView } from '../hooks/useInView'; 
+import { useInView } from '../hooks/useInView';
+import profilePic from '../assets/pp.jpg'; // ✅ Import local image
 
 const About = () => {
     const [ref, isVisible] = useInView({ threshold: 0.1 });
+
     return (
-        <section id="about" ref={ref} className={`about-section animate-fade-in-up ${isVisible ? 'is-visible' : ''}`}>
+        <section
+            id="about"
+            ref={ref}
+            className={`about-section animate-fade-in-up ${isVisible ? 'is-visible' : ''}`}
+        >
             <div className="container">
                 <h2 className="about-title">About Me</h2>
                 <div className="about-content md-flex-row">
                     <div className="about-image-wrapper md-w-1-3 md-mb-0">
-                       
-                        <img src="https://media.licdn.com/dms/image/v2/D5603AQHx9-rabuyiEw/profile-displayphoto-scale_400_400/B56Zln_2KYIAAg-/0/1758386415597?e=1761177600&v=beta&t=dcfDqVN41NbQo6Mocy8oMNenyoTBRYk__9eH9MRQmo8" alt="Gino James" className="about-image" />
+                        {/* ✅ Use local image here */}
+                        <img
+                            src={profilePic}
+                            alt="Gino James"
+                            className="about-image"
+                        />
                     </div>
                     <div className="about-text-content md-w-2-3">
                         <p>
@@ -20,7 +30,7 @@ const About = () => {
                             With a strong foundation in Data Science, I specialize in extracting insights from data and transforming them into actionable solutions. As a Web Developer, I craft responsive and user-centric websites, and through Flutter, I bring seamless cross-platform mobile apps to life.
                         </p>
                         <p>
-                             My deep interest in Artificial Intelligence and Machine Learning keeps me on the cutting edge of innovation, always exploring smarter, faster, and more efficient ways to build the future.
+                            My deep interest in Artificial Intelligence and Machine Learning keeps me on the cutting edge of innovation, always exploring smarter, faster, and more efficient ways to build the future.
                         </p>
                         <p>
                             Whether it’s building intelligent systems, designing beautiful interfaces, or developing scalable solutions, I bring creativity, precision, and purpose to every project I take on.
