@@ -1,5 +1,5 @@
 import React from 'react';
-import { useInView } from '../hooks/useInView'; // Import the custom hook
+import { useInView } from '../hooks/useInView'; 
 
 const About = () => {
     const [ref, isVisible] = useInView({ threshold: 0.1 });
@@ -9,7 +9,7 @@ const About = () => {
                 <h2 className="about-title">About Me</h2>
                 <div className="about-content md-flex-row">
                     <div className="about-image-wrapper md-w-1-3 md-mb-0">
-                        {/* Remember to replace this with your actual photo */}
+                       
                         <img src="https://media.licdn.com/dms/image/v2/D5603AQHx9-rabuyiEw/profile-displayphoto-scale_400_400/B56Zln_2KYIAAg-/0/1758386415597?e=1761177600&v=beta&t=dcfDqVN41NbQo6Mocy8oMNenyoTBRYk__9eH9MRQmo8" alt="Gino James" className="about-image" />
                     </div>
                     <div className="about-text-content md-w-2-3">
