@@ -19,7 +19,7 @@ const Contact = () => {
           Open to opportunities, collabs, or just a friendly hello — reach out and let’s build something epic together
         </p>
 
-        {/* Futuristic Email Button */}
+        {/*Email Button */}
         <div className="mb-10">
           <a
             href="mailto:ginojames957@gmail.com?subject=Hello Gino&body=Write your message here..."
