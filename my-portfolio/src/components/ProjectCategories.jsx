@@ -1,6 +1,6 @@
 import React from 'react';
-// Removed: import { useInView } from '../hooks/useInView.js'; // This is no longer needed here
-import ProjectCategoryCard from './ProjectCategoryCard.jsx'; // Correctly import the ProjectCategoryCard component
+
+import ProjectCategoryCard from './ProjectCategoryCard.jsx'; 
 
 const ProjectCategories = ({ onSelectDomain }) => {
     const domains = [
@@ -17,7 +17,7 @@ const ProjectCategories = ({ onSelectDomain }) => {
                 <p className="projects-description">Click on a domain to see related projects.</p>
                 <div className="project-categories-grid md-grid-cols-2 lg-grid-cols-4">
                     {domains.map((domain, index) => (
-                        // Render ProjectCategoryCard component for each domain
+                      
                         <ProjectCategoryCard
                             key={index}
                             domain={domain}
