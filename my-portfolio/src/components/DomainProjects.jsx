@@ -1,8 +1,6 @@
 import React from 'react';
-// Removed: import { useInView } from '../hooks/useInView'; // This import is no longer needed here
-import ProjectCard from './ProjectCard.jsx'; // Correctly import the ProjectCard component
-
-// Project Data (moved here for this component's scope, or could be in a central data file)
+ 
+import ProjectCard from './ProjectCard.jsx'; 
 const allProjectData = [
     {
         title: "telecom-churn-predictor",
@@ -79,7 +77,6 @@ const DomainProjects = ({ domain, onBack }) => {
                 {filteredProjects.length > 0 ? (
                     <div className="domain-projects-grid md-grid-cols-2 lg-grid-cols-3">
                         {filteredProjects.map((project, index) => (
-                            // Render ProjectCard component for each project
                             <ProjectCard key={index} project={project} index={index} />
                         ))}
                     </div>
